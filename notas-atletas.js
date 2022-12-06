@@ -38,13 +38,11 @@ let atletas = [
 
         // soma e conta as notas válidas
         let soma = 0
-        let qtdNotas = 0
-        let notasConsideradas = []
+        let qtdNotas = 0        
         for(let i = 0; i < atleta.notas.length; i++){            
             if(atleta.notas[i] != menor && atleta.notas[i] != maior){
                 soma = soma + atleta.notas[i]
-                qtdNotas = qtdNotas + 1 
-                notasConsideradas.push(atleta.notas[i])
+                qtdNotas = qtdNotas + 1                 
             }
         }
         
